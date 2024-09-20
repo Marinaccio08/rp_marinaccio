@@ -1,43 +1,54 @@
 /* ----------------- Class CSS ----------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Average&family=Dancing+Script:wght@400..700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Average&family=Lobster&display=swap');
+
 .about{
     width:400px;
     margin: auto;
 }
 
 .about-team{
-    color:rgb(82, 81, 81)
+    color:#496940;
 }
 
-.authors{
-    background-color: #dbe3e7;
+.authors, 
+.overview {
+    background-color: rgb(191, 216, 189);
 }
 
-.body{
-    background-color: rgb(90, 92, 92);
+.table{
+    background-color: rgb(191, 216, 189);
+    border: 0.1em solid rgb(255,255,255);
 }
 
-.footer{
-    background-color: #023E8A;
+.body {
+    background-color: rgb(109, 105, 105);
+}
+
+
+.footer,
+.nb-background-color{
+    background-color: #496940;
+}
+
+.table-header-bg{
+    background-color: #496940;
+    color: #FFFFFF;
 }
 
 .icon-white{            /* Arrow icon at bottom of page */
     color: #FFFFFF;
 }
 
-.nb-background-color{   /* navbar background color */
-    background-color: #023E8A;
-}
-
 .nbMenuItem{               /* navbar link text properties */
     font-size:25px;
+    color:rgb(191, 216, 189);
+    font-family: Average, serif;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.overview{
-    background-color: #dbe3e7;
-}
 
 .ovPadLeft{
     padding-left: 20px;
@@ -48,13 +59,14 @@
 }
 
 .procedure{
-    background-color: #dbe3e7;
+    background-color: #82bfa2ff; 
     padding: 1px;
 }
 
 .showcase{
-    background-color: #8fa3ab; /*#0096c7*/
+    background-color: #82bfa2ff; 
 }
+
 
 /* ----------------- ID CSS ----------------- */
 
@@ -81,4 +93,29 @@
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
+}
+
+.text-white{
+    color: #ffffff;
+}
+
+.average-font{
+    font-family: Average, serif
+}
+
+.cool-font{
+    font-family: 'Dancing Script', serif;
+}
+
+.graft-image{
+    border: 0.3em solid rgb(255,255,255);
+    border-radius: 15px;
+}
+
+.pink-header{
+    color: #a64d79;
+}
+
+.text-green{
+    color:#496940;
 }
