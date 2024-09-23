@@ -13,19 +13,24 @@
 }
 
 .authors, 
-.overview {
+.overview{
     background-color: rgb(191, 216, 189);
 }
 
 .table{
     background-color: rgb(191, 216, 189);
     border: 0.1em solid rgb(255,255,255);
+    padding: 0.4em;
+}
+
+.table-numbers{
+    background-color:rgba(255, 255,255,40%);
+    width:7.5%;
 }
 
 .body {
     background-color: rgb(109, 105, 105);
 }
-
 
 .footer,
 .nb-background-color{
@@ -45,28 +50,28 @@
     font-size:25px;
     color:rgb(191, 216, 189);
     font-family: Average, serif;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 
 .ovPadLeft{
-    padding-left: 20px;
+    padding-left: 2em;
 }
 
 .ovPadRight{  
-    padding-right: 20px;
+    padding-right: 2em;
 }
 
-.procedure{
+.procedure, 
+.references{
     background-color: #82bfa2ff; 
-    padding: 1px;
+    padding: 0.1em;
 }
 
 .showcase{
     background-color: #82bfa2ff; 
 }
-
 
 /* ----------------- ID CSS ----------------- */
 
@@ -122,4 +127,25 @@
 
 .img-margin{
     margin-left: 50px;
+}
+
+.annotation{
+    margin-right: 2em;
+    color:#496940;
+    font-family: Average, serif;
+}
+
+
+.col-width{
+    width:50%;
+}
+
+.img-size-sm{
+    width:40%;
+    height:auto;
+}
+
+.img-size-smaller{
+    width:40%;
+    height:auto;
 }
