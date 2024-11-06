@@ -49,24 +49,24 @@ async function createChart(){
                     label: `Height of Italian Basil Self-Grafts in cm`,
                     data: data.yIBControl,
                     fill:false,          //does not fill area under the data
-                    backgroundColor: 'rgb(166,77,121)',
-                    borderColor: 'rgb(166,77,121)',
+                    backgroundColor: 'rgb(232, 147, 203)',
+                    borderColor: 'rgb(232, 147, 203)',
                     borderWidth: 1
                 },
                 {
                     label: `Height of Sweet Basil Rootstock Interspecific Grafts in cm`,
                     data: data.ySBRootGraft,
                     fill:false,          //does not fill area under the data
-                    backgroundColor: 'rgb(130,191,162)',
-                    borderColor: 'rgb(130,191,162)',
-                    borderWidth: 1
+                    backgroundColor: '#black',
+                    borderColor: '#black',
+                    borderWidth: 1,
                 },
                 {
                     label: `Height of Italian Basil Rootstock Interspecific Grafts in cm`,
                     data: data.yIBRootGraft,
                     fill:false,          //does not fill area under the data
-                    backgroundColor: 'rgb(242, 157, 213)',
-                    borderColor: 'rgb(242, 157, 213)',
+                    backgroundColor: 'rgb(166,77,121)',
+                    borderColor: 'rgb(166,77,121)',
                     borderWidth: 1
                 }
             ]
@@ -79,8 +79,10 @@ async function createChart(){
                     title: {
                         display: true,
                         text: 'Days',       //x-axis title
+                        color: 'rgb(73, 105, 64)',
                         font: {             //font properties
-                            size:14
+                            size:14,
+                            family: 'Average'
                         },
                     },
                     ticks: {
@@ -88,7 +90,8 @@ async function createChart(){
                             return index % 2 === 0 ? this.getLabelForValue(val) : '';
                         },
                         font:{
-                            size: 14
+                            size: 14,
+                            family: 'Average'
                         }
                     },
                     grid: {
@@ -98,38 +101,48 @@ async function createChart(){
                 y: {
                     title: {
                         display: true,
+                        color: 'rgb(73, 105, 64)',
                         text: 'Height (cm)',       //y-axis title
                         font: {             //font properties
-                            size:14
+                            size:14,
+                            family: 'Average'
                         },
                     },
                     ticks: {
                         maxTicksLimit: (data.ySBControl.length)+10,
                         font:{
-                            size: 12
+                            size: 12,
+                            family: 'Average'
                         }
                     },
                     grid: {
-                        color: '#6c767e'
+                        color: '#496940'
                     }
                 }
             },
             plugins: { //display options for title and legend
                 title:{
-                    display:true,   //diaply chart title
+                    display:true,   //display chart title
                     text: 'Basil Graft Height (cm) over Time',
                     font:{
-                        size: 24
+                        size: 24,
+                        family: 'Average',
                     },
-                    color: '#black',
+                    color: '#a64d79',
                     padding: {
                         top:10,
                         bottom: 30
                     }
                 },
                 legend: {
-                    align:'start',
-                    position:'bottom'
+                    align:'center',
+                    position:'bottom',
+                    labels: {
+                        font: {
+                            family: 'Average'
+                        },
+                        color: '#496940'
+                    }
                 }
             }
         }

@@ -74,11 +74,10 @@
     padding: 0.1em;
 }
 
+.chartjs, 
 .showcase{
     background-color: #82bfa2ff; 
 }
-
-/* ----------------- ID CSS ----------------- */
 
 /* -----------------Underline Animation CSS -----------------*/
 .hover-underline-animation {
@@ -188,7 +187,7 @@
     height: 40vh; 
     width:  80vw;
     min-height: 400px;
-    background-color: whitesmoke !important;
+    background-color: rgb(202, 224, 199) !important;
     justify-content: center;
     align-items: center;  
 }
