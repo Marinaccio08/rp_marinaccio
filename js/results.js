@@ -1,5 +1,5 @@
 async function getData(){
-    const response = await fetch('../data.csv'); // .. moves up one folder level
+    const response = await fetch('..data.csv'); // .. moves up one folder level
     const data = await response.text(); //CSV in text format
 
     const xDays = [];
