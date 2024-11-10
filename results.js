@@ -57,8 +57,8 @@ async function createChart(){
                     label: `Height of Sweet Basil Rootstock Interspecific Grafts in cm`,
                     data: data.ySBRootGraft,
                     fill:false,          //does not fill area under the data
-                    backgroundColor: '#black',
-                    borderColor: '#black',
+                    backgroundColor: 'rgb(0,0,0)',
+                    borderColor: 'rgb(0,0,0)',
                     borderWidth: 1,
                 },
                 {
